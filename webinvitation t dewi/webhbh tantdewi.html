@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halal BiHalal Alumni 55 92</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: white; overflow-x: hidden; }
+        .glass { background: rgba(255, 255, 255, 0.08); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .bg-parallax {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('2.jpeg');
+            background-attachment: fixed; background-size: cover; background-position: center;
+        }
+        .btn-wa { background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .btn-wa:hover { transform: scale(1.02); box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3); }
+        .photo-card { transition: all 0.5s ease; cursor: pointer; border: 2px solid rgba(255,255,255,0.1); }
+        .photo-card:hover { transform: translateY(-10px) scale(1.05); border-color: #10b981; z-index: 20; }
+    </style>
+</head>
+<body class="bg-parallax">
+
+    <div class="min-h-screen flex items-center justify-center p-6">
+        <div class="max-w-6xl w-full grid lg:grid-cols-2 gap-12 items-center">
+            
+            <div class="animate__animated animate__fadeInLeft">
+                <h2 class="text-emerald-400 font-bold tracking-[0.3em] mb-4 text-xs uppercase">The Grand Reunion</h2>
+                <h1 class="text-6xl md:text-8xl font-serif font-bold mb-6 leading-tight" style="font-family: 'Playfair Display';">
+                    Halal <br><span class="text-emerald-500">BiHalal</span>
+                </h1>
+                <p class="text-gray-300 text-lg mb-8 max-w-md leading-relaxed">Alumni SMPN 55 Jakarta Barat Angkatan '92. Mengukir kembali kenangan, mempererat tali persaudaraan.</p>
+                
+                <div class="flex gap-6 mb-8">
+                    <div class="glass p-5 rounded-2xl flex-1 text-center">
+                        <p class="text-[10px] text-emerald-400 font-bold uppercase mb-1">Minggu</p>
+                        <p class="text-xl font-bold">05 APR</p>
+                        <p class="text-[10px] opacity-60">2026</p>
+                    </div>
+                    <div class="glass p-5 rounded-2xl flex-1 text-center">
+                        <p class="text-[10px] text-emerald-400 font-bold uppercase mb-1">Pukul</p>
+                        <p class="text-xl font-bold">14:00</p>
+                        <p class="text-[10px] opacity-60">WIB - Selesai</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass p-10 rounded-[2.5rem] shadow-2xl animate__animated animate__fadeInRight relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4 opacity-10 text-6xl">✨</div>
+                <h3 class="text-2xl font-bold mb-8">Reservasi Kehadiran</h3>
+                
+                <div class="mb-8 p-5 bg-emerald-500/10 rounded-2xl border border-emerald-500/20">
+                    <p class="text-[10px] text-emerald-400 mb-2 uppercase font-black tracking-widest">Dana Kontribusi: Rp 50.000</p>
+                    <div class="flex justify-between items-end">
+                        <div>
+                            <p class="text-2xl font-mono font-bold text-white tracking-tighter">0030463382</p>
+                            <p class="text-xs opacity-70">BCA - Wahyu Dewi Sugiarti</p>
+                        </div>
+                        <button onclick="copyRek()" class="text-xs bg-white text-black px-4 py-2 rounded-xl font-bold hover:bg-emerald-400 transition-colors">SALIN</button>
+                    </div>
+                </div>
+
+                <form id="waForm" class="space-y-5">
+                    <input type="text" id="nama" class="w-full bg-white/5 border border-white/10 p-4 rounded-2xl focus:ring-2 focus:ring-emerald-500 outline-none transition-all" placeholder="Nama Lengkap Anda" required>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <select id="status" class="w-full bg-slate-800 border border-white/10 p-4 rounded-2xl outline-none text-sm">
+                            <option value="Hadir">✅ Akan Hadir</option>
+                            <option value="Tidak Hadir">❌ Berhalangan</option>
+                        </select>
+                        <select id="bayar" class="w-full bg-slate-800 border border-white/10 p-4 rounded-2xl outline-none text-sm">
+                            <option value="Sudah Transfer">Sudah Transfer</option>
+                            <option value="Bayar di Tempat">Bayar di Tempat</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="w-full btn-wa py-5 rounded-2xl font-black uppercase tracking-[0.2em] text-sm mt-4">
+                        Kirim via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-6 pb-32">
+        <div class="text-center mb-16">
+            <h3 class="text-3xl font-serif mb-2">Memori & Dokumentasi</h3>
+            <div class="h-1 w-20 bg-emerald-500 mx-auto rounded-full"></div>
+        </div>
+        
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            <div class="photo-card rounded-3xl overflow-hidden aspect-[3/4] shadow-2xl">
+                <img src="1.jpeg" class="w-full h-full object-cover">
+            </div>
+            <div class="photo-card rounded-3xl overflow-hidden aspect-[3/4] shadow-2xl">
+                <img src="2.jpeg" class="w-full h-full object-cover">
+            </div>
+            <div class="photo-card rounded-3xl overflow-hidden aspect-[3/4] shadow-2xl">
+                <img src="3.jpeg" class="w-full h-full object-cover">
+            </div>
+            <div class="photo-card rounded-3xl overflow-hidden aspect-[3/4] shadow-2xl">
+                <img src="2.jpeg" class="w-full h-full object-cover">
+            </div>
+            <div class="photo-card rounded-3xl overflow-hidden aspect-[3/4] shadow-2xl">
+                <img src="1.jpeg" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('waForm').onsubmit = function(e) {
+            e.preventDefault();
+            
+            // KONTAK ADMIN (NOMOR YANG ANDA BERIKAN)
+            const noAdmin = "6285715934810"; 
+            
+            const nama = document.getElementById('nama').value;
+            const status = document.getElementById('status').value;
+            const bayar = document.getElementById('bayar').value;
+            
+            const pesan = `*KONFIRMASI KEHADIRAN*%0A` +
+                          `*HALAL BIHALAL ALUMNI 55_92*%0A%0A` +
+                          `• *Nama:* ${nama}%0A` +
+                          `• *Status:* ${status}%0A` +
+                          `• *Pembayaran:* ${bayar}%0A%0A` +
+                          `_Mohon dikonfirmasi ya admin, terima kasih!_`;
+
+            window.open(`https://wa.me/${noAdmin}?text=${pesan}`, '_blank');
+        };
+
+        function copyRek() {
+            navigator.clipboard.writeText("0030463382");
+            alert("Nomor Rekening BCA Berhasil Disalin!");
+        }
+    </script>
+</body>
+</html>
